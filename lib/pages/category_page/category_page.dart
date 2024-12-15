@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_grocery/widgets/shared/sub_title.dart';
 import 'package:flutter_grocery/widgets/shared/notification_card.dart';
 
 class CategoryPage extends StatelessWidget {
@@ -23,7 +24,15 @@ class CategoryPage extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.all(8),
           child: Column(
-            children: [NotificationCard()],
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              NotificationCard(),
+              SizedBox(
+                height: 18,
+              ),
+              SubTitle(title: 'All Categories'),
+
+            ],
           ),
         ),
       ),
