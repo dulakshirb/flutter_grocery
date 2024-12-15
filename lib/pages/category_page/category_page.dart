@@ -47,18 +47,12 @@ class CategoryPage extends StatelessWidget {
                         bgColor: Color(0xFF0057FF),
                         circleColor: Color(0xFF0E00AC),
                       ),
-                      SizedBox(
-                        height: 15,
-                      ),
                       CategoryCard(
                         title: 'Cooking &\nElements',
                         description: '10+ more ...',
                         borderColor: Color(0xFF00E0FF),
                         bgColor: Color(0xFF00E0FF),
                         circleColor: Color(0xFF10C0F8),
-                      ),
-                      SizedBox(
-                        height: 15,
                       ),
                       CategoryCard(
                         title: 'Vegetables &\nFruits',
@@ -72,14 +66,11 @@ class CategoryPage extends StatelessWidget {
                   Column(
                     children: [
                       CategoryCard(
-                        title: 'Bites &\Drinks',
+                        title: 'Bites &\nDrinks',
                         description: '53+ more ...',
                         borderColor: Color(0xFF00FF29),
                         bgColor: Color(0xFF70FF00),
                         circleColor: Color(0xFF06FFA5),
-                      ),
-                      SizedBox(
-                        height: 15,
                       ),
                       CategoryCard(
                         title: 'Checken &\nBeef',
@@ -87,9 +78,6 @@ class CategoryPage extends StatelessWidget {
                         borderColor: Color(0xFFFFB800),
                         bgColor: Color(0xFFFFF500),
                         circleColor: Color(0xFFFF9900),
-                      ),
-                      SizedBox(
-                        height: 15,
                       ),
                       CategoryCard(
                         title: 'Transport &\nVehicles',
