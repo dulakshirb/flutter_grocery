@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_grocery/pages/home_page/widgets/search_bar_field.dart';
 import 'package:flutter_grocery/widgets/app_bar/app_bar.dart';
 import 'package:flutter_grocery/widgets/reusable/product_card.dart';
-import 'package:flutter_grocery/widgets/reusable/sale_product_card.dart';
+import 'package:flutter_grocery/widgets/reusable/product_price_card.dart';
 import 'package:flutter_grocery/widgets/reusable/sub_title.dart';
 
 class HomePage extends StatelessWidget {
@@ -92,15 +92,17 @@ class HomePage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SaleProductCard(
+                    ProductPriceCard(
                       title: 'Washing Liquid',
-                      quantity: '220 ml',
-                      amount: '230',
+                      unit: 'ml',
+                      amount: 220,
+                      price: 230,
                     ),
-                    SaleProductCard(
+                    ProductPriceCard(
                       title: 'Coffee and Tea',
-                      quantity: '100 g',
-                      amount: '30',
+                      unit: 'g',
+                      amount: 100,
+                      price: 30,
                     ),
                   ],
                 ),

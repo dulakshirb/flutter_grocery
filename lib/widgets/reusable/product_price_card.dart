@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-class SaleProductCard extends StatelessWidget {
-  final String title, quantity, amount;
+class ProductPriceCard extends StatelessWidget {
+  final String title, unit;
+  final double amount, price;
 
-  const SaleProductCard(
+  const ProductPriceCard(
       {super.key,
       required this.title,
-      required this.quantity,
-      required this.amount});
+      required this.unit,
+      required this.amount,
+      required this.price});
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +54,7 @@ class SaleProductCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      quantity,
+                      '${amount.toString()} $unit',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 12,
@@ -60,7 +62,7 @@ class SaleProductCard extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      '$amount\$',
+                      '${price.toString()}\$',
                       style: TextStyle(
                         color: Color(0xFFFFE500),
                         fontSize: 16,
@@ -82,6 +84,7 @@ class SaleProductCard extends StatelessWidget {
                   child: Icon(
                     Icons.add,
                     color: Colors.white,
+                    size: 30,
                   ),
                 ),
               ],
