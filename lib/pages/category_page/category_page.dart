@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_grocery/widgets/shared/notification_card.dart';
 
 class CategoryPage extends StatelessWidget {
   const CategoryPage({super.key});
@@ -17,6 +18,14 @@ class CategoryPage extends StatelessWidget {
           ),
         ),
         centerTitle: true,
+      ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(8),
+          child: Column(
+            children: [NotificationCard()],
+          ),
+        ),
       ),
     );
   }
