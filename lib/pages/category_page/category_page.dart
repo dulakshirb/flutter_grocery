@@ -89,7 +89,8 @@ class CategoryPage extends StatelessWidget {
                     ],
                   ),
                 ],
-              )
+              ),
+              SubTitle(title: 'Selected Items')
             ],
           ),
         ),
