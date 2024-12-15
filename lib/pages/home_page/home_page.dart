@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_grocery/pages/home_page/widgets/search_bar_field.dart';
 import 'package:flutter_grocery/widgets/app_bar/app_bar.dart';
+import 'package:flutter_grocery/widgets/sub_title.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -19,8 +20,16 @@ class HomePage extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SearchBarField(),
+                const SizedBox(
+                  height: 18,
+                ),
+                SubTitle(title: 'Explore Categories'),
+                const SizedBox(
+                  height: 18,
+                ),
               ],
             ),
           ),
